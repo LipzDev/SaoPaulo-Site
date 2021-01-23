@@ -433,70 +433,23 @@ html{
 
 /* TRANSIÇÕES E OVERLAYS */
 
-.box{
+.footer-item{
     text-align: center;
     color: white;
 }
 
-.box h4{
+.footer-item h4{
     font-size: 3.0rem;
     margin-bottom: 20px;
     font-weight: 400;
 }
 
-.box a{
+.footer-item a{
     color: white;
     font-weight: 300;
     font-size: 2.0rem;
 }
 
-.box li+li{
+.footer-item li+li{
     margin-top: 20px;
 }
-
-/* TRANSICAO */
-
-.transicao{
-    width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    z-index: 9999;
-
-    position: fixed;
-    left: 0;
-    top: 0;  
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: esquerda 1s 1s;
-}
-
-.transicao::after{
-    content:'logo';
-    text-transform: uppercase;
-    left: 15px;
-    font-size: 20.0rem;
-    color: white;
-    font-weight: bold;
-    
-}
-
-@keyframes esquerda{
-
-    0%{
-        left: 0;
-    }
-
-    70%{
-        left: 40rem;
-    }
-   
-    100%{
-        left: 500rem;
-    }
-
-
-}
-
-

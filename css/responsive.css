@@ -172,9 +172,9 @@
 
     /* VIDEO MODAL */
 
-    .modal .video iframe{
+    .video iframe{
         width: 90%;    
-        height: 60%;
+        height: 50%;
     }
 
     /* NEWSLETTER */
@@ -389,7 +389,7 @@
     }
 
     .galeria-text h1{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     /* FORM */
