@@ -52,8 +52,18 @@
     <section class="galeria">
         <div class="container">
 
-            <div class="galeria-flex">
-                <img src="imgs/video.png" alt="player de video">
+            <div class="galeria-flex">   
+                <img src="imgs/video.png" alt="player de video"> 
+
+                <div class="video" data-closeModal>
+                    <div class="fechar" data-closeModal>
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                    <iframe width="" height="" src="https://www.youtube.com/embed/-EXfgdC2pRg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>   
+
+                <!-- TEXTO EXPLORAR -->
 
                 <div class="galeria-text" >
                     <h1>Lorem Ipsum</h1>
@@ -61,15 +71,8 @@
                     <div class="galeria-button" >
                         <a href="#">Explorar</a>
                     </div>
-                </div>     
-                
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-EXfgdC2pRg?autoplay=0;mute=0;?controls=1&amp;stop" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div class="fechar">
-                    <i class="fas fa-times"></i>
-                </div>                
+                </div>                    
+                                         
             </div>  
             
             <div class="galeria-scroll dragscroll" >
@@ -166,6 +169,6 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
