@@ -1,0 +1,408 @@
+/* RESOLUÇÃO DESKTOP TELA PEQUENA */
+
+@media screen and (width: 1360px) and (height: 768px){
+    /* form */
+
+    .formulario{
+        top: 90rem;
+    }
+}
+
+/* RESOLUÇÃO NOTEBOOK */
+
+@media screen and (width: 1280px) and (height: 800px){
+    /* form */
+
+    .formulario{
+        top: 90rem;
+    }
+}
+
+/* RESOLUÇÃO TABLET */
+
+@media (max-width: 1024px){
+    
+    .menu{
+        display: none;
+    }
+
+    .ativo.menu{
+        display: block;        
+    }
+
+    .ativo.menu ul{
+        background-color: black;
+        text-align: center;  
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-bottom-right-radius: 50px;
+
+        animation: animaMenu 0.3s ease-out;
+    }
+
+    .ativo.menu li+li{
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .ativo.menu a{
+        color: white;
+        font-size: 3.0rem;
+    }
+
+    /* MENU-MOBILE ICON */
+
+    .icon{
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .um{
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        transition: 0.3s;
+    }
+
+    .dois{
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .tres{
+        background-color: black;
+        width: 30px;
+        height: 3px;
+        transition: 0.3s;
+    }
+
+    /* ICONE X */
+
+    .icon-x .um{
+        background-color: white;
+        transform: rotate(45deg) translate(9px, 5px);
+    }
+
+    .icon-x .dois{
+        opacity: 0;
+    }
+
+    .icon-x .tres{
+        background-color: white;
+        transform: rotate(-45deg) translate(3px, -0px);
+    }
+
+    @keyframes animaMenu{
+        from{
+            left: -100%;
+        }
+
+        to{
+            left: 0%;
+        }
+    }
+
+    /* GALERIA */
+
+    .galeria{
+        top: 80rem;
+    }
+
+    .galeria-flex{
+        flex-direction: column;   
+        align-items: flex-start;            
+    }
+
+    .galeria-flex img{
+        order: 1;
+        margin-top: 70px;
+        max-width: 100%; 
+    }
+    
+    .galeria{
+        position: relative;
+    }
+
+    .galeria-text h1{
+        font-size: 4.0rem;
+        font-weight: 400;
+    }
+
+    .galeria-text p{
+        font-size: 2.5rem;
+        max-width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .galeria-text a{
+        padding: 14px 20px;
+        border-radius: 10px;
+    }   
+
+    /* SCROLL */
+
+    .galeria-scroll{
+        overflow-x: scroll;
+        display: flex;
+        margin-top: 100px;   
+    }
+
+    .galeria-scroll img{
+        max-width: 400px;   
+        margin-bottom: 40px; 
+    }
+
+    .galeria-scroll img+img{
+        margin-left: 100px;
+    }
+
+    /* VIDEO MODAL */
+
+    .modal .video iframe{
+        width: 90%;    
+        height: 60%;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter h2{
+        font-size: 3.0rem;
+        text-align: center;
+    }   
+    
+    .news{
+        width: 80%;
+        position: relative;
+    }
+
+    .news input{
+        border: 0;
+        width: 45%;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .news button{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* FORM */
+
+    .formulario{
+        height: 70vh;
+        top: 95rem;
+    }
+
+    .form{
+        width: 650px;
+        padding: 0;
+    }
+
+        /* FOOTER */
+
+        .footer{
+            height: 30vh;
+        }
+    
+        .footer-flex{
+            justify-content: center;
+        }
+
+        .remove{
+            display: none;
+        }    
+        
+        
+}
+
+
+/* RESOLUÇÃO DE CELULAR */
+
+@media (max-width: 480px){
+    .ativo.menu a{
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    /* BACKGROUND */
+    
+    .icon-next i{
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    /* GALERIA */
+
+    .galeria{
+        top: 55rem;
+    }
+
+    .galeria-text h1{
+        font-size: 2.0rem;
+        font-weight: 400;
+    }
+
+    .galeria-text p{
+        font-size: 1.5rem;
+    }
+    
+
+    /* NEWSLETTER */
+
+    .newsletter{
+        top: 65rem;
+    }
+
+     .newsletter h2{
+        font-size: 2.0rem;
+    }
+
+    /* LOCALIZAÇÃO */
+
+    .localizacao{
+        top: 70rem;
+    }
+
+    .localizacao h3{
+        font-size: 1.7rem;
+    }
+
+    .localizacao img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+    /* FORM */
+
+    .formulario{
+        width: 100%;
+        height: 100vh;
+        top: 73rem;
+    }
+
+    .formulario h3{
+        font-size: 1.7rem;
+        padding: 85px 0 30px 0;  
+    }
+
+    .formulario-item{
+        position: initial;
+        left: 0;
+        top: 0;
+        transform: translate(0,0);
+    }
+
+    .form{
+        width: 100%;
+        padding: 0;
+    }
+
+    .form input{
+        max-width: 100%;
+    }
+
+    .form button{
+        width: 100%;
+    }
+
+    .nome{
+        justify-content: initial; 
+        flex-direction: column;
+    }
+
+    .nome input{
+        width: calc(100% - 45px);        
+    }
+
+    .nome input+input{
+        margin-left: 0;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        top: 72rem;
+        height: 60vh;
+    }
+
+    .footer-flex{
+        justify-content: center;
+    }
+
+    .remove{
+        display: none;
+    }  
+
+    .transicao::after{
+        font-size: 10.0rem;
+    }
+
+}
+
+
+
+/* RESOLUÇÃO IPHONE X */
+
+@media screen and (width: 375px) and (height: 812px){
+    .galeria{
+        top: 61rem;
+    }
+
+    /* form */
+
+    .formulario{
+        height: 80vh;
+        top: 70rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        top: 70rem;
+        height: 51vh;
+    }
+}
+
+/* RESOLUÇÃO DE CELULAR IPHONE 5S */
+
+@media screen and (width: 320px) and (height: 568px){
+    .galeria{
+        top: 45rem;
+        
+    }
+
+    .galeria-text h1{
+        font-size: 1.6rem;
+    }
+
+    /* FORM */
+
+    .formulario{
+        height: 120vh;
+        top: 70rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        top: 68rem;
+        height: 51vh;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e6b1f34d6c.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+    <title>SÃO PAULO</title>
+</head>
+<body>
+
+    <div id="overlay-0"></div>
+
+    <!-- HEADER -->    
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logomarca">LOGO</a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">About</a></li>
+                    <li><a href="#contato">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <div class="um"></div>
+                <div class="dois"></div>
+                <div class="tres"></div>
+            </div>
+        </div>        
+    </header>
+
+    <!-- BACKGROUND -->
+
+    <section class="bg" id="home">
+       <div class="slide">
+            <img class="selected" src="imgs/bg1.jpg" alt="Background 1">
+            <img src="imgs/bg2.jpg"  alt="Background 2">
+            <img src="imgs/bg3.jpg" alt="Background 3">
+            <img src="imgs/bg4.png" alt="Background 4">
+
+            <div class="icon-next">
+                <a href="#contato"><i class="fas fa-arrow-down"></i></a>
+            </div>
+       </div>      
+    </section>
+
+    <!-- GALERIA -->
+
+    <section class="galeria">
+        <div class="container">
+
+            <div class="galeria-flex">
+                <img src="imgs/video.png" alt="player de video">
+
+                <div class="galeria-text" >
+                    <h1>Lorem Ipsum</h1>
+                    <p>Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    <div class="galeria-button" >
+                        <a href="#">Explorar</a>
+                    </div>
+                </div>     
+                
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-EXfgdC2pRg?autoplay=0;mute=0;?controls=1&amp;stop" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="fechar">
+                    <i class="fas fa-times"></i>
+                </div>                
+            </div>  
+            
+            <div class="galeria-scroll dragscroll" >
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos">
+                <img src="imgs/fotos.png" alt="Fotos" id="sobre">
+            </div>
+        </div>        
+    </section>
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter" >
+        <h2>Donecsolli  citudin</h2>
+        
+        <form class="news">
+            <input type="email" placeholder="Insira seu email aqui...">
+            <button>Enviar</button>
+        </form>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+
+    <section class="localizacao">
+        <div class="container">
+
+            <h3>Localização</h3>
+
+            <img src="imgs/mapa.png" alt="Mapa">
+               
+
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+
+    <section class="formulario" id="contato">
+        <div class="container">
+            <h3>Formulário</h3>
+            <div class="formulario-item">
+
+                <form action="" class="form">
+                    <div class="nome">
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Sobrenome">
+                    </div>                    
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Assunto">
+                    <textarea placeholder="Mensagem..."></textarea>
+                    <button>ENVIAR</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <div class="container">
+
+            <div class="footer-flex">
+                <div class="box">
+                    <h4>Onde estamos ?</h4>
+                    <li><a href="#">Link - 1</a></li>
+                    <li><a href="#">Link - 2</a></li>
+                    <li><a href="#">Link - 3</a></li>
+                </div>
+
+                <div class="box remove">
+                    <h4>Links úteis</h4>
+                    <li><a href="#">Link - 1</a></li>
+                    <li><a href="#">Link - 2</a></li>
+                    <li><a href="#">Link - 3</a></li>
+                </div>
+
+                <div class="box remove">
+                    <h4>Parceiros</h4>
+                    <ul>
+                        <li><a href="#">Link - 1</a></li>
+                        <li><a href="#">Link - 2</a></li>
+                        <li><a href="#">Link - 3</a></li>
+                    </ul>
+                </div>
+            </div>           
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
